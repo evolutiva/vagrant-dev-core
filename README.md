@@ -29,7 +29,7 @@ Se debe el path de archivos sincronizados por el que se requiera usar con el fin
 Base de Datos Relacional
 -----------
 
-Ningun motor de base de datos está instalado por defecto, a continuación algunos links de interes al respecto
+PostgreSQL 9.3 instalado por defecto, a continuación algunos links de interes al respecto
 
 * [PostgreSQL] - Motor de Base de Datos recomendado
 * [MariaDB] - Alternativa a MySQL
