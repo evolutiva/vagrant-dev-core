@@ -29,7 +29,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     sudo apt-get update
     #Install devel core
-    sudo apt-get install -y nginx python-pip build-essential vim zsh tmux mongodb-org curl git libc6-dev python-dev libpq-dev postgresql-9.3
+    sudo apt-get install -y nginx python-pip build-essential vim zsh tmux mongodb-org curl git libc6-dev python-dev libpq-dev libcurl4-openssl-dev postgresql-9.3
     #Install images requirements
     sudo apt-get install -y python-imaging  python-dev libjpeg8 libjpeg8-dev libfreetype6 libfreetype6-dev
     cd;
