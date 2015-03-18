@@ -28,10 +28,16 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
 
     sudo apt-get update
+    #Install Optional
+    sudo apt-get install -y nginx mongodb-org
+    #Install DB
+    sudo apt-get install -y postgresql-9.3
     #Install devel core
-    sudo apt-get install -y nginx python-pip build-essential vim zsh tmux mongodb-org curl git libc6-dev python-dev libpq-dev libcurl4-openssl-dev postgresql-9.3
+    sudo apt-get install -y python-pip build-essential vim zsh tmux curl git libc6-dev python-dev libpq-dev libcurl4-openssl-dev
     #Install images requirements
     sudo apt-get install -y python-imaging  python-dev libjpeg8 libjpeg8-dev libfreetype6 libfreetype6-dev
+    #Install Python 3
+    sudo apt-get install -y python3 python3-dev python3-software-properties python-virtualenv
     cd;
     wget http://nodejs.org/dist/v0.10.32/node-v0.10.32.tar.gz
     tar xzf node-v0.10.32.tar.gz;
