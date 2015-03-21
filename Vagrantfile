@@ -38,6 +38,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     sudo apt-get install -y python-imaging  python-dev libjpeg8 libjpeg8-dev libfreetype6 libfreetype6-dev
     #Install Python 3
     sudo apt-get install -y python3 python3-dev python3-software-properties python-virtualenv
+    #Install Scrapy Requerimients
+    sudo apt-get install libxml2-dev libxslt1-dev libssl-dev libffi-dev
     cd;
     wget http://nodejs.org/dist/v0.10.32/node-v0.10.32.tar.gz
     tar xzf node-v0.10.32.tar.gz;
