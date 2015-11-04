@@ -42,6 +42,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     sudo apt-get install libxml2-dev libxslt1-dev libssl-dev libffi-dev
     #Install Odoo Requerimients
     sudo apt-get install -y python-ldap libsasl2-dev
+    #Install Mysql dev
+    sudo apt-get install -y libmysqlclient-dev
     cd;
     wget http://nodejs.org/dist/v0.10.32/node-v0.10.32.tar.gz
     tar xzf node-v0.10.32.tar.gz;
